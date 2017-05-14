@@ -1,4 +1,5 @@
 #Parties
+
 Parties are the main function of the app. Users post parties for other users to show up to them.
 
 #Party Object
@@ -13,7 +14,9 @@ Parties are the main function of the app. Users post parties for other users to 
 
 #Get Parties
 **GET** /parties
+
 Returns an array of parties
+
 
 ######Query String Paramaters
 |Field|Type|Description|Default|
@@ -23,11 +26,14 @@ Returns an array of parties
 
 #Get Party
 **GET** /parties/{party.id}
+
 Returns a party object
 
 #Create Party
 **POST** /parties
-Creates a [party](party.md)
+
+Creates a party
+
 
 ######JSON Paramaters
 |Field|Type|Description|
@@ -41,6 +47,8 @@ Creates a [party](party.md)
 #Modify Party
 **PATCH** /parties/{party.id}
 
+Modifies a party. Returns the new party object
+
 ######JSON Paramaters
 |Field|Type|Description|
 |---|---|---|
@@ -51,5 +59,6 @@ Creates a [party](party.md)
 
 #Delete Party
 **DELETE** /parties/{party.id}
+
 Deletes a party. Returns a 204 on success
 
