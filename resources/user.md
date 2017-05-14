@@ -9,3 +9,38 @@ Users are the base of the app. Users each have a profile and can create or parti
 |avatar|string|link to avatar on CDN|
 |verified|boolean|whether or not the user has verified their email|
 |email|string|email of user|
+
+#Get User
+**GET** /users/{user.id}
+Returns a user object for a given user
+
+#Modify User
+**PATCH** /users/{user.id}
+Modify a user. Returns the updated user object on success
+######Valid Paramaters
+|Field|Type|
+|---|---|---|
+|username|string|
+|avatar|integer|
+|verified|boolean|
+
+#Get Current Parties
+**GET** /users/{user.id}/parties
+Returns the [parties](party.md) a user has posted
+
+#Delete Party
+**DELETE** /users/{user.id}/parties/{party.id}
+Deletes a party, then returns a 204 on success
+
+#Create Party
+**POST** /users/{user.id}/parties
+Creates a [party](party.md)
+
+######Paramaters
+|Field|Type|Description|
+|---|---|---|
+|name|string|the name of the party|
+|time|integer|time (in ms) of the party|
+|location|string|location of party|
+|description|string|description of party|
+
