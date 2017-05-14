@@ -13,6 +13,9 @@ Users are the base of the app. Users each have a profile and can create or parti
 #Create User
 **POST** /users
 
+Creates a user then returns a user object
+
+
 #####JSON Parameters
 |Field|Type|Description|Required|
 |---|---|---|---|
@@ -21,11 +24,15 @@ Users are the base of the app. Users each have a profile and can create or parti
 
 #Get User
 **GET** /users/{user.id}
+
 Returns a user object for a given user
 
 #Modify User
 **PATCH** /users/{user.id}
+
 Modify a user. Returns the updated user object on success
+
+
 ######JSON Parameters
 |Field|Type|
 |---|---|
@@ -35,4 +42,5 @@ Modify a user. Returns the updated user object on success
 
 #Get User Parties
 **GET** /users/{user.id}/parties
+
 Returns the [parties](party.md) a user has posted
