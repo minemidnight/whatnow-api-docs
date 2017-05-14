@@ -27,20 +27,3 @@ Modify a user. Returns the updated user object on success
 #Get Current Parties
 **GET** /users/{user.id}/parties
 Returns the [parties](party.md) a user has posted
-
-#Delete Party
-**DELETE** /users/{user.id}/parties/{party.id}
-Deletes a party, then returns a 204 on success
-
-#Create Party
-**POST** /users/{user.id}/parties
-Creates a [party](party.md)
-
-######Paramaters
-|Field|Type|Description|
-|---|---|---|
-|name|string|the name of the party|
-|time|integer|time (in ms) of the party|
-|location|string|location of party|
-|description|string|description of party|
-
