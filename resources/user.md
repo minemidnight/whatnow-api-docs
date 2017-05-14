@@ -40,7 +40,13 @@ Modify a user. Returns the updated user object on success
 |avatar|base64 image data|
 |verified|boolean|
 
+#Delete User
+**DELETE** /users/{user.id}
+
+Deletes a user. Returns a 204 on success
+
 #Get User Parties
 **GET** /users/{user.id}/parties
 
 Returns the [parties](party.md) a user has posted
+
