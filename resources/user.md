@@ -19,7 +19,7 @@ Returns a user object for a given user
 Modify a user. Returns the updated user object on success
 ######Valid Paramaters
 |Field|Type|
-|---|---|---|
+|---|---|
 |username|string|
 |avatar|integer|
 |verified|boolean|
