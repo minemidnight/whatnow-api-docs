@@ -21,6 +21,7 @@ Creates a user then returns a user object
 |---|---|---|---|
 |username|string|the user's username|true|
 |email|string|email of user|true|
+|password|sha512 string|hashed password of user|true|
 
 #Get User
 **GET** /users/{user.id}
@@ -39,6 +40,7 @@ Modify a user. Returns the updated user object on success
 |username|string|
 |avatar|base64 image data|
 |verified|boolean|
+|password|sha512 string|
 
 #Delete User
 **DELETE** /users/{user.id}
@@ -49,4 +51,14 @@ Deletes a user. Returns a 204 on success
 **GET** /users/{user.id}/parties
 
 Returns the [parties](party.md) a user has posted
+
+#Login
+**GET** /users/{user.id}/login
+
+Returns a boolean whether or not the password is correct
+
+######Query String Paramaters
+|Field|Type|
+|---|---|
+|password|sha512 string|
 
