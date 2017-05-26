@@ -6,6 +6,11 @@ Snowflake to timestamp (ms)
 (id / 4194304) + 1420070400000
 ```
 
+Test if a snowflake _may be_ valid. This does not mean this snowflake exists, or is necessarily valid but the possibility is high
+```
+^\d{17,21}$
+```
+
 #Avatar Data
 
 Data format example:
@@ -19,5 +24,5 @@ Ensure you use the proper header type (image/jpeg, image/png, image/gif) that ma
 
 Usernames not matching the following regex will be invalid:
 ```
-[A-Za-z0-9_]{4,32}
+^[A-Za-z0-9_]{4,32}$
 ```
