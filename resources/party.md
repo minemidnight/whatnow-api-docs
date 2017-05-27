@@ -13,7 +13,7 @@ Parties are the main function of the app. Users post parties for other users to 
 |description|string|the description of the party|
 |premium|boolean|if a party has paid for extra advertising|
 |price|integer|price a user has to pay to participate in the party (upon arriving)|
-|thumbnail|string|link to CDN image of thumbnail for party|
+|thumbnail|string|CDN image file|
 
 #Get Parties
 **GET** /parties
