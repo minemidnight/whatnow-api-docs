@@ -6,7 +6,7 @@ Users are the base of the app. Users each have a profile and can create or parti
 |---|---|---|
 |id|snowflake|the user's id|
 |username|string|the user's username|
-|avatar|string|link to avatar on CDN|
+|avatar|string|snowflake + extenstion of user avatar on the CDN|
 |verified|boolean|whether or not the user has verified their email|
 |email|string|email of user|
 
