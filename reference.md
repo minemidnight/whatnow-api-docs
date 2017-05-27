@@ -33,4 +33,4 @@ Usernames not matching the following regex will be invalid:
 
 #CDN Images
 
-All thumbnails, avatars and other pictures necessary will be hosted on the CDN (base url: `cdn.whatnow.com`). Any time this data is present, it will return the relative path of an image on the CDN. For example, an avatar of a user holds the data `317876126770790400.png`, then the link would be http://cdn.whatnow.com/317876126770790400.png
+All thumbnails, avatars and other pictures necessary will be hosted on the CDN (base url: `cdn.whatnow.com`). Any time this data is present, it will return the file (name.ext) of an image on the CDN. For example, an avatar of a user holds the data `317876126770790400.png`, so the link would be http://cdn.whatnow.com/317876126770790400.png for the real image.
