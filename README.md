@@ -1,4 +1,4 @@
-##WhatNow
+ ##WhatNow
 WhatNow is an app for listing parties with an extenstive API. The API supports both REST and WebSockets to send and receive data.
 
 ##Base URL
